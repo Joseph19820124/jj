@@ -4,7 +4,19 @@ export default function Home() {
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-4 animate-fade-in-down">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-[#1F1F1E] hover:scale-110 transition-transform cursor-pointer">Nexus</div>
+          <div className="flex items-center gap-2 hover:scale-105 transition-transform cursor-pointer">
+            <svg className="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" fill="url(#logoGradient)" />
+              <path d="M14 20L18 24L26 16" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+              <defs>
+                <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#DA7756" />
+                  <stop offset="1" stopColor="#E8956A" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span className="text-2xl font-bold text-[#1F1F1E]">Nexus</span>
+          </div>
           <div className="hidden md:flex space-x-8">
             <a href="#features" className="text-[#5D5D5A] hover:text-[#DA7756] transition">Features</a>
             <a href="#pricing" className="text-[#5D5D5A] hover:text-[#DA7756] transition">Pricing</a>
@@ -342,7 +354,19 @@ export default function Home() {
         <div className="container mx-auto px-6 py-12">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold text-[#1F1F1E] mb-4">Nexus</div>
+              <div className="flex items-center gap-2 mb-4">
+                <svg className="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="18" fill="url(#logoGradientFooter)" />
+                  <path d="M14 20L18 24L26 16" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                  <defs>
+                    <linearGradient id="logoGradientFooter" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#DA7756" />
+                      <stop offset="1" stopColor="#E8956A" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span className="text-2xl font-bold text-[#1F1F1E]">Nexus</span>
+              </div>
               <p className="text-[#5D5D5A]">Building the future, one idea at a time.</p>
             </div>
             <div>
