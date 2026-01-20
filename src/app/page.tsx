@@ -1,16 +1,16 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-[#F9F6F1] via-[#FAF8F5] to-[#F5F1EB]">
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-4 animate-fade-in-down">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-white hover:scale-110 transition-transform cursor-pointer">Nexus</div>
+          <div className="text-2xl font-bold text-[#1F1F1E] hover:scale-110 transition-transform cursor-pointer">Nexus</div>
           <div className="hidden md:flex space-x-8">
-            <a href="#features" className="text-gray-300 hover:text-white transition">Features</a>
-            <a href="#pricing" className="text-gray-300 hover:text-white transition">Pricing</a>
-            <a href="#about" className="text-gray-300 hover:text-white transition">About</a>
+            <a href="#features" className="text-[#5D5D5A] hover:text-[#DA7756] transition">Features</a>
+            <a href="#pricing" className="text-[#5D5D5A] hover:text-[#DA7756] transition">Pricing</a>
+            <a href="#about" className="text-[#5D5D5A] hover:text-[#DA7756] transition">About</a>
           </div>
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
+          <button className="bg-[#DA7756] hover:bg-[#C96A4B] text-white px-6 py-2 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-[#DA7756]/25">
             Get Started
           </button>
         </div>
@@ -19,18 +19,18 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up">
+          <h1 className="text-5xl md:text-7xl font-bold text-[#1F1F1E] mb-6 leading-tight animate-fade-in-up">
             Launch Your Next
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 animate-gradient"> Big Idea</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#DA7756] to-[#E8956A] animate-gradient"> Big Idea</span>
           </h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto animate-fade-in-up delay-200" style={{animationFillMode: 'both'}}>
+          <p className="text-xl text-[#5D5D5A] mb-10 max-w-2xl mx-auto animate-fade-in-up delay-200" style={{animationFillMode: 'both'}}>
             A modern platform to help you build, launch, and scale your products faster than ever. Join thousands of creators who trust us with their vision.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-400" style={{animationFillMode: 'both'}}>
-            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 animate-pulse-glow">
+            <button className="bg-[#DA7756] hover:bg-[#C96A4B] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 hover:shadow-xl hover:shadow-[#DA7756]/30 animate-pulse-glow">
               Start Free Trial
             </button>
-            <button className="border border-gray-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition-all hover:scale-105 hover:border-purple-400">
+            <button className="border border-[#D4D0C8] text-[#1F1F1E] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#EDEAE4] transition-all hover:scale-105 hover:border-[#DA7756]">
               Watch Demo
             </button>
           </div>
@@ -45,8 +45,8 @@ export default function Home() {
             { number: '24/7', label: 'Support' },
           ].map((stat, index) => (
             <div key={index} className="text-center animate-fade-in-up hover:scale-110 transition-transform cursor-default" style={{animationDelay: `${600 + index * 100}ms`, animationFillMode: 'both'}}>
-              <div className="text-4xl font-bold text-white">{stat.number}</div>
-              <div className="text-gray-400 mt-1">{stat.label}</div>
+              <div className="text-4xl font-bold text-[#1F1F1E]">{stat.number}</div>
+              <div className="text-[#8B8B87] mt-1">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -54,8 +54,8 @@ export default function Home() {
 
       {/* Features Section */}
       <section id="features" className="container mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold text-white text-center mb-4 animate-fade-in-up">Powerful Features</h2>
-        <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto animate-fade-in-up delay-100" style={{animationFillMode: 'both'}}>
+        <h2 className="text-4xl font-bold text-[#1F1F1E] text-center mb-4 animate-fade-in-up">Powerful Features</h2>
+        <p className="text-[#5D5D5A] text-center mb-16 max-w-2xl mx-auto animate-fade-in-up delay-100" style={{animationFillMode: 'both'}}>
           Everything you need to bring your ideas to life, all in one place.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
@@ -115,10 +115,10 @@ export default function Home() {
               description: 'Connect with your favorite tools through our extensive API and integrations.',
             },
           ].map((feature, index) => (
-            <div key={index} className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover-lift card-shine group" style={{animationDelay: `${index * 100}ms`}}>
-              <div className="text-purple-400 mb-4 group-hover:scale-110 group-hover:text-pink-400 transition-all duration-300">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-purple-300 transition-colors">{feature.title}</h3>
-              <p className="text-gray-400">{feature.description}</p>
+            <div key={index} className="bg-white/80 backdrop-blur-lg rounded-2xl p-8 hover:bg-white transition-all duration-300 hover-lift card-shine group border border-[#E8E4DC]" style={{animationDelay: `${index * 100}ms`}}>
+              <div className="text-[#DA7756] mb-4 group-hover:scale-110 group-hover:text-[#C96A4B] transition-all duration-300">{feature.icon}</div>
+              <h3 className="text-xl font-semibold text-[#1F1F1E] mb-2 group-hover:text-[#DA7756] transition-colors">{feature.title}</h3>
+              <p className="text-[#5D5D5A]">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -126,8 +126,8 @@ export default function Home() {
 
       {/* How It Works Section */}
       <section className="container mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">How It Works</h2>
-        <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        <h2 className="text-4xl font-bold text-[#1F1F1E] text-center mb-4">How It Works</h2>
+        <p className="text-[#5D5D5A] text-center mb-16 max-w-2xl mx-auto">
           Get started in minutes with our simple three-step process.
         </p>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -149,11 +149,11 @@ export default function Home() {
             },
           ].map((item, index) => (
             <div key={index} className="text-center relative group hover:scale-105 transition-transform duration-300">
-              <div className="text-6xl font-bold text-purple-600/20 mb-4 group-hover:text-purple-600/40 transition-colors">{item.step}</div>
-              <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
-              <p className="text-gray-400">{item.description}</p>
+              <div className="text-6xl font-bold text-[#DA7756]/20 mb-4 group-hover:text-[#DA7756]/40 transition-colors">{item.step}</div>
+              <h3 className="text-xl font-semibold text-[#1F1F1E] mb-2">{item.title}</h3>
+              <p className="text-[#5D5D5A]">{item.description}</p>
               {index < 2 && (
-                <div className="hidden md:block absolute top-8 -right-4 text-purple-600/40 animate-pulse">
+                <div className="hidden md:block absolute top-8 -right-4 text-[#DA7756]/40 animate-pulse">
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -166,8 +166,8 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <section className="container mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">What Our Users Say</h2>
-        <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        <h2 className="text-4xl font-bold text-[#1F1F1E] text-center mb-4">What Our Users Say</h2>
+        <p className="text-[#5D5D5A] text-center mb-16 max-w-2xl mx-auto">
           Join thousands of satisfied customers who have transformed their workflow.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
@@ -191,22 +191,22 @@ export default function Home() {
               avatar: 'ER',
             },
           ].map((testimonial, index) => (
-            <div key={index} className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 hover-lift card-shine transition-all duration-300 hover:bg-white/10">
-              <div className="flex items-center gap-1 text-yellow-400 mb-4">
+            <div key={index} className="bg-white/80 backdrop-blur-lg rounded-2xl p-8 hover-lift card-shine transition-all duration-300 hover:bg-white border border-[#E8E4DC]">
+              <div className="flex items-center gap-1 text-[#DA7756] mb-4">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-300 mb-6 italic">&ldquo;{testimonial.quote}&rdquo;</p>
+              <p className="text-[#5D5D5A] mb-6 italic">&ldquo;{testimonial.quote}&rdquo;</p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 bg-gradient-to-br from-[#DA7756] to-[#E8956A] rounded-full flex items-center justify-center text-white font-semibold">
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <div className="text-white font-semibold">{testimonial.name}</div>
-                  <div className="text-gray-400 text-sm">{testimonial.role}</div>
+                  <div className="text-[#1F1F1E] font-semibold">{testimonial.name}</div>
+                  <div className="text-[#8B8B87] text-sm">{testimonial.role}</div>
                 </div>
               </div>
             </div>
@@ -216,8 +216,8 @@ export default function Home() {
 
       {/* Pricing Section */}
       <section id="pricing" className="container mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">Simple, Transparent Pricing</h2>
-        <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        <h2 className="text-4xl font-bold text-[#1F1F1E] text-center mb-4">Simple, Transparent Pricing</h2>
+        <p className="text-[#5D5D5A] text-center mb-16 max-w-2xl mx-auto">
           Choose the plan that fits your needs. No hidden fees, cancel anytime.
         </p>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -250,29 +250,29 @@ export default function Home() {
               popular: false,
             },
           ].map((plan, index) => (
-            <div key={index} className={`rounded-2xl p-8 transition-all duration-300 hover-lift ${plan.popular ? 'bg-gradient-to-b from-purple-600 to-pink-600 scale-105 hover:scale-110' : 'bg-white/5 backdrop-blur-lg hover:bg-white/10'}`}>
+            <div key={index} className={`rounded-2xl p-8 transition-all duration-300 hover-lift ${plan.popular ? 'bg-gradient-to-b from-[#DA7756] to-[#C96A4B] scale-105 hover:scale-110' : 'bg-white/80 backdrop-blur-lg hover:bg-white border border-[#E8E4DC]'}`}>
               {plan.popular && (
                 <div className="text-sm font-semibold text-white bg-white/20 rounded-full px-3 py-1 inline-block mb-4">
                   Most Popular
                 </div>
               )}
-              <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
+              <h3 className={`text-2xl font-bold mb-2 ${plan.popular ? 'text-white' : 'text-[#1F1F1E]'}`}>{plan.name}</h3>
               <div className="mb-4">
-                <span className="text-4xl font-bold text-white">{plan.price}</span>
-                <span className="text-gray-300 ml-2">/{plan.period}</span>
+                <span className={`text-4xl font-bold ${plan.popular ? 'text-white' : 'text-[#1F1F1E]'}`}>{plan.price}</span>
+                <span className={`ml-2 ${plan.popular ? 'text-white/80' : 'text-[#8B8B87]'}`}>/{plan.period}</span>
               </div>
-              <p className={`mb-6 ${plan.popular ? 'text-white/80' : 'text-gray-400'}`}>{plan.description}</p>
+              <p className={`mb-6 ${plan.popular ? 'text-white/80' : 'text-[#5D5D5A]'}`}>{plan.description}</p>
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    <svg className={`w-5 h-5 ${plan.popular ? 'text-white' : 'text-purple-400'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className={`w-5 h-5 ${plan.popular ? 'text-white' : 'text-[#DA7756]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className={plan.popular ? 'text-white' : 'text-gray-300'}>{feature}</span>
+                    <span className={plan.popular ? 'text-white' : 'text-[#5D5D5A]'}>{feature}</span>
                   </li>
                 ))}
               </ul>
-              <button className={`w-full py-3 rounded-full font-semibold transition ${plan.popular ? 'bg-white text-purple-600 hover:bg-gray-100' : 'bg-purple-600 text-white hover:bg-purple-700'}`}>
+              <button className={`w-full py-3 rounded-full font-semibold transition ${plan.popular ? 'bg-white text-[#DA7756] hover:bg-gray-100' : 'bg-[#DA7756] text-white hover:bg-[#C96A4B]'}`}>
                 {plan.cta}
               </button>
             </div>
@@ -282,8 +282,8 @@ export default function Home() {
 
       {/* FAQ Section */}
       <section id="about" className="container mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">Frequently Asked Questions</h2>
-        <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        <h2 className="text-4xl font-bold text-[#1F1F1E] text-center mb-4">Frequently Asked Questions</h2>
+        <p className="text-[#5D5D5A] text-center mb-16 max-w-2xl mx-auto">
           Got questions? We have answers.
         </p>
         <div className="max-w-3xl mx-auto space-y-4">
@@ -309,14 +309,14 @@ export default function Home() {
               answer: 'Yes! Nexus integrates with popular tools like Slack, GitHub, Jira, Figma, and many more. Check our integrations page for the full list.',
             },
           ].map((faq, index) => (
-            <details key={index} className="group bg-white/5 backdrop-blur-lg rounded-xl hover:bg-white/10 transition-all duration-300">
+            <details key={index} className="group bg-white/80 backdrop-blur-lg rounded-xl hover:bg-white transition-all duration-300 border border-[#E8E4DC]">
               <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                <span className="text-lg font-semibold text-white">{faq.question}</span>
-                <svg className="w-5 h-5 text-purple-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <span className="text-lg font-semibold text-[#1F1F1E]">{faq.question}</span>
+                <svg className="w-5 h-5 text-[#DA7756] group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <div className="px-6 pb-6 text-gray-400">
+              <div className="px-6 pb-6 text-[#5D5D5A]">
                 {faq.answer}
               </div>
             </details>
@@ -326,51 +326,51 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-6 py-20">
-        <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-12 text-center animate-gradient hover:shadow-2xl hover:shadow-purple-500/20 transition-shadow duration-500">
+        <div className="bg-gradient-to-r from-[#DA7756] to-[#E8956A] rounded-3xl p-12 text-center animate-gradient hover:shadow-2xl hover:shadow-[#DA7756]/20 transition-shadow duration-500">
           <h2 className="text-4xl font-bold text-white mb-4">Ready to Get Started?</h2>
           <p className="text-white/80 mb-8 max-w-2xl mx-auto">
             Join thousands of innovators who are already building the future with our platform.
           </p>
-          <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-110 hover:shadow-xl animate-float">
+          <button className="bg-white text-[#DA7756] px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-110 hover:shadow-xl animate-float">
             Start Your Free Trial
           </button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-800">
+      <footer className="border-t border-[#E8E4DC] bg-white/50">
         <div className="container mx-auto px-6 py-12">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold text-white mb-4">Nexus</div>
-              <p className="text-gray-400">Building the future, one idea at a time.</p>
+              <div className="text-2xl font-bold text-[#1F1F1E] mb-4">Nexus</div>
+              <p className="text-[#5D5D5A]">Building the future, one idea at a time.</p>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Product</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition">Features</a></li>
-                <li><a href="#" className="hover:text-white transition">Pricing</a></li>
-                <li><a href="#" className="hover:text-white transition">Changelog</a></li>
+              <h4 className="text-[#1F1F1E] font-semibold mb-4">Product</h4>
+              <ul className="space-y-2 text-[#5D5D5A]">
+                <li><a href="#" className="hover:text-[#DA7756] transition">Features</a></li>
+                <li><a href="#" className="hover:text-[#DA7756] transition">Pricing</a></li>
+                <li><a href="#" className="hover:text-[#DA7756] transition">Changelog</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition">About</a></li>
-                <li><a href="#" className="hover:text-white transition">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition">Careers</a></li>
+              <h4 className="text-[#1F1F1E] font-semibold mb-4">Company</h4>
+              <ul className="space-y-2 text-[#5D5D5A]">
+                <li><a href="#" className="hover:text-[#DA7756] transition">About</a></li>
+                <li><a href="#" className="hover:text-[#DA7756] transition">Blog</a></li>
+                <li><a href="#" className="hover:text-[#DA7756] transition">Careers</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition">Privacy</a></li>
-                <li><a href="#" className="hover:text-white transition">Terms</a></li>
-                <li><a href="#" className="hover:text-white transition">Security</a></li>
+              <h4 className="text-[#1F1F1E] font-semibold mb-4">Legal</h4>
+              <ul className="space-y-2 text-[#5D5D5A]">
+                <li><a href="#" className="hover:text-[#DA7756] transition">Privacy</a></li>
+                <li><a href="#" className="hover:text-[#DA7756] transition">Terms</a></li>
+                <li><a href="#" className="hover:text-[#DA7756] transition">Security</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <div className="border-t border-[#E8E4DC] mt-12 pt-8 text-center text-[#8B8B87]">
             <p>&copy; 2024 Nexus. All rights reserved.</p>
           </div>
         </div>
