@@ -143,7 +143,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="text-2xl font-bold text-white mb-4">Nexus</div>
-              <p className="text-gray-400">Building the future, one launch at a time.</p>
+              <p className="text-gray-400">Building the future, one idea at a time.</p>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-4">Product</h4>
