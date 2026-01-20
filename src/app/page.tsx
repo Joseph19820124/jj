@@ -4,7 +4,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-white">Launchpad</div>
+          <div className="text-2xl font-bold text-white">Nexus</div>
           <div className="hidden md:flex space-x-8">
             <a href="#features" className="text-gray-300 hover:text-white transition">Features</a>
             <a href="#pricing" className="text-gray-300 hover:text-white transition">Pricing</a>
@@ -142,7 +142,7 @@ export default function Home() {
         <div className="container mx-auto px-6 py-12">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold text-white mb-4">Launchpad</div>
+              <div className="text-2xl font-bold text-white mb-4">Nexus</div>
               <p className="text-gray-400">Building the future, one launch at a time.</p>
             </div>
             <div>
@@ -171,7 +171,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Launchpad. All rights reserved.</p>
+            <p>&copy; 2024 Nexus. All rights reserved.</p>
           </div>
         </div>
       </footer>
