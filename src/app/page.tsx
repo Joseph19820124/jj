@@ -2,15 +2,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Navigation */}
-      <nav className="container mx-auto px-6 py-4">
+      <nav className="container mx-auto px-6 py-4 animate-fade-in-down">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-white">Nexus</div>
+          <div className="text-2xl font-bold text-white hover:scale-110 transition-transform cursor-pointer">Nexus</div>
           <div className="hidden md:flex space-x-8">
             <a href="#features" className="text-gray-300 hover:text-white transition">Features</a>
             <a href="#pricing" className="text-gray-300 hover:text-white transition">Pricing</a>
             <a href="#about" className="text-gray-300 hover:text-white transition">About</a>
           </div>
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition">
+          <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
             Get Started
           </button>
         </div>
@@ -19,18 +19,18 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up">
             Launch Your Next
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> Big Idea</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 animate-gradient"> Big Idea</span>
           </h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto animate-fade-in-up delay-200" style={{animationFillMode: 'both'}}>
             A modern platform to help you build, launch, and scale your products faster than ever. Join thousands of creators who trust us with their vision.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition transform hover:scale-105">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-400" style={{animationFillMode: 'both'}}>
+            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30 animate-pulse-glow">
               Start Free Trial
             </button>
-            <button className="border border-gray-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition">
+            <button className="border border-gray-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition-all hover:scale-105 hover:border-purple-400">
               Watch Demo
             </button>
           </div>
@@ -44,7 +44,7 @@ export default function Home() {
             { number: '150+', label: 'Countries' },
             { number: '24/7', label: 'Support' },
           ].map((stat, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="text-center animate-fade-in-up hover:scale-110 transition-transform cursor-default" style={{animationDelay: `${600 + index * 100}ms`, animationFillMode: 'both'}}>
               <div className="text-4xl font-bold text-white">{stat.number}</div>
               <div className="text-gray-400 mt-1">{stat.label}</div>
             </div>
@@ -54,8 +54,8 @@ export default function Home() {
 
       {/* Features Section */}
       <section id="features" className="container mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">Powerful Features</h2>
-        <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        <h2 className="text-4xl font-bold text-white text-center mb-4 animate-fade-in-up">Powerful Features</h2>
+        <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto animate-fade-in-up delay-100" style={{animationFillMode: 'both'}}>
           Everything you need to bring your ideas to life, all in one place.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
@@ -115,9 +115,9 @@ export default function Home() {
               description: 'Connect with your favorite tools through our extensive API and integrations.',
             },
           ].map((feature, index) => (
-            <div key={index} className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 hover:bg-white/10 transition">
-              <div className="text-purple-400 mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
+            <div key={index} className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover-lift card-shine group" style={{animationDelay: `${index * 100}ms`}}>
+              <div className="text-purple-400 mb-4 group-hover:scale-110 group-hover:text-pink-400 transition-all duration-300">{feature.icon}</div>
+              <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-purple-300 transition-colors">{feature.title}</h3>
               <p className="text-gray-400">{feature.description}</p>
             </div>
           ))}
@@ -148,12 +148,12 @@ export default function Home() {
               description: 'Deploy with one click and scale effortlessly as you grow.',
             },
           ].map((item, index) => (
-            <div key={index} className="text-center relative">
-              <div className="text-6xl font-bold text-purple-600/20 mb-4">{item.step}</div>
+            <div key={index} className="text-center relative group hover:scale-105 transition-transform duration-300">
+              <div className="text-6xl font-bold text-purple-600/20 mb-4 group-hover:text-purple-600/40 transition-colors">{item.step}</div>
               <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
               <p className="text-gray-400">{item.description}</p>
               {index < 2 && (
-                <div className="hidden md:block absolute top-8 -right-4 text-purple-600/40">
+                <div className="hidden md:block absolute top-8 -right-4 text-purple-600/40 animate-pulse">
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -191,7 +191,7 @@ export default function Home() {
               avatar: 'ER',
             },
           ].map((testimonial, index) => (
-            <div key={index} className="bg-white/5 backdrop-blur-lg rounded-2xl p-8">
+            <div key={index} className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 hover-lift card-shine transition-all duration-300 hover:bg-white/10">
               <div className="flex items-center gap-1 text-yellow-400 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
@@ -250,7 +250,7 @@ export default function Home() {
               popular: false,
             },
           ].map((plan, index) => (
-            <div key={index} className={`rounded-2xl p-8 ${plan.popular ? 'bg-gradient-to-b from-purple-600 to-pink-600 scale-105' : 'bg-white/5 backdrop-blur-lg'}`}>
+            <div key={index} className={`rounded-2xl p-8 transition-all duration-300 hover-lift ${plan.popular ? 'bg-gradient-to-b from-purple-600 to-pink-600 scale-105 hover:scale-110' : 'bg-white/5 backdrop-blur-lg hover:bg-white/10'}`}>
               {plan.popular && (
                 <div className="text-sm font-semibold text-white bg-white/20 rounded-full px-3 py-1 inline-block mb-4">
                   Most Popular
@@ -309,7 +309,7 @@ export default function Home() {
               answer: 'Yes! Nexus integrates with popular tools like Slack, GitHub, Jira, Figma, and many more. Check our integrations page for the full list.',
             },
           ].map((faq, index) => (
-            <details key={index} className="group bg-white/5 backdrop-blur-lg rounded-xl">
+            <details key={index} className="group bg-white/5 backdrop-blur-lg rounded-xl hover:bg-white/10 transition-all duration-300">
               <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
                 <span className="text-lg font-semibold text-white">{faq.question}</span>
                 <svg className="w-5 h-5 text-purple-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -326,12 +326,12 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-6 py-20">
-        <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-12 text-center">
+        <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-12 text-center animate-gradient hover:shadow-2xl hover:shadow-purple-500/20 transition-shadow duration-500">
           <h2 className="text-4xl font-bold text-white mb-4">Ready to Get Started?</h2>
           <p className="text-white/80 mb-8 max-w-2xl mx-auto">
             Join thousands of innovators who are already building the future with our platform.
           </p>
-          <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">
+          <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-110 hover:shadow-xl animate-float">
             Start Your Free Trial
           </button>
         </div>
